@@ -12,6 +12,8 @@
 		4EDA84852B2D29DF005828BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA84842B2D29DF005828BF /* Assets.xcassets */; };
 		4EDA84882B2D29DF005828BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA84872B2D29DF005828BF /* Preview Assets.xcassets */; };
 		4EDA849C2B2D347F005828BF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA849B2B2D347F005828BF /* MainTabView.swift */; };
+		4EDA849E2B2DFDE9005828BF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA849D2B2DFDE9005828BF /* ProfileView.swift */; };
+		4EDA84A12B2E0E9A005828BF /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84A02B2E0E9A005828BF /* UserStatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		4EDA84842B2D29DF005828BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EDA84872B2D29DF005828BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EDA849B2B2D347F005828BF /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		4EDA849D2B2DFDE9005828BF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4EDA84A02B2E0E9A005828BF /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				4EDA84942B2D2AD3005828BF /* Authentication */,
+				4EDA849F2B2E0E5A005828BF /* Components */,
 				4EDA84952B2D2ADF005828BF /* Feed */,
-				4EDA84962B2D2B46005828BF /* Root */,
+				4EDA84962B2D2B46005828BF /* Profile */,
 				4EDA84972B2D2B4A005828BF /* Search */,
 				4EDA84992B2D2B85005828BF /* TabBar */,
 				4EDA84982B2D2B84005828BF /* UploadPost */,
@@ -122,11 +127,12 @@
 			path = Feed;
 			sourceTree = "<group>";
 		};
-		4EDA84962B2D2B46005828BF /* Root */ = {
+		4EDA84962B2D2B46005828BF /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				4EDA849D2B2DFDE9005828BF /* ProfileView.swift */,
 			);
-			path = Root;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		4EDA84972B2D2B4A005828BF /* Search */ = {
@@ -156,6 +162,14 @@
 			children = (
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		4EDA849F2B2E0E5A005828BF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4EDA84A02B2E0E9A005828BF /* UserStatView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EDA849E2B2DFDE9005828BF /* ProfileView.swift in Sources */,
 				4EDA84832B2D29DB005828BF /* ContentView.swift in Sources */,
 				4EDA84812B2D29DB005828BF /* InstagramCloneApp.swift in Sources */,
+				4EDA84A12B2E0E9A005828BF /* UserStatView.swift in Sources */,
 				4EDA849C2B2D347F005828BF /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
