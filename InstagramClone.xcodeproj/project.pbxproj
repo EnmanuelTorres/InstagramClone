@@ -53,7 +53,7 @@
 			children = (
 				4EDA84932B2D2A21005828BF /* App */,
 				4EDA84922B2D2A1B005828BF /* Core */,
-				4EDA84902B2D2A0C005828BF /* Extensions */,
+				4EDA849A2B2D3351005828BF /* Extentions */,
 				4EDA848F2B2D2A0B005828BF /* Model */,
 				4EDA848E2B2D2A09005828BF /* Services */,
 				4EDA84822B2D29DB005828BF /* ContentView.swift */,
@@ -83,14 +83,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		4EDA84902B2D2A0C005828BF /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Extensions;
-			path = "New Group1/Extensions";
 			sourceTree = "<group>";
 		};
 		4EDA84922B2D2A1B005828BF /* Core */ = {
@@ -154,6 +146,13 @@
 			children = (
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4EDA849A2B2D3351005828BF /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
