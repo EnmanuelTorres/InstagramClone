@@ -11,6 +11,7 @@
 		4EDA84832B2D29DB005828BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84822B2D29DB005828BF /* ContentView.swift */; };
 		4EDA84852B2D29DF005828BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA84842B2D29DF005828BF /* Assets.xcassets */; };
 		4EDA84882B2D29DF005828BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA84872B2D29DF005828BF /* Preview Assets.xcassets */; };
+		4EDA849C2B2D347F005828BF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA849B2B2D347F005828BF /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		4EDA84822B2D29DB005828BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4EDA84842B2D29DF005828BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EDA84872B2D29DF005828BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4EDA849B2B2D347F005828BF /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		4EDA84992B2D2B85005828BF /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				4EDA849B2B2D347F005828BF /* MainTabView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			files = (
 				4EDA84832B2D29DB005828BF /* ContentView.swift in Sources */,
 				4EDA84812B2D29DB005828BF /* InstagramCloneApp.swift in Sources */,
+				4EDA849C2B2D347F005828BF /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
