@@ -21,6 +21,7 @@
 		4EDA84AB2B307F7E005828BF /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84AA2B307F7E005828BF /* AddEmailView.swift */; };
 		4EDA84AD2B308533005828BF /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84AC2B308533005828BF /* IGTextFieldModifier.swift */; };
 		4EDA84AF2B309ACA005828BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84AE2B309ACA005828BF /* User.swift */; };
+		4EDA84B12B30AC60005828BF /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84B02B30AC60005828BF /* CurrentUserProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		4EDA84AA2B307F7E005828BF /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		4EDA84AC2B308533005828BF /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
 		4EDA84AE2B309ACA005828BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4EDA84B02B30AC60005828BF /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				4EDA849D2B2DFDE9005828BF /* ProfileView.swift */,
+				4EDA84B02B30AC60005828BF /* CurrentUserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				4EDA84AF2B309ACA005828BF /* User.swift in Sources */,
 				4EDA84A12B2E0E9A005828BF /* UserStatView.swift in Sources */,
 				4EDA84A32B2E209E005828BF /* FeedView.swift in Sources */,
+				4EDA84B12B30AC60005828BF /* CurrentUserProfileView.swift in Sources */,
 				4EDA849C2B2D347F005828BF /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
