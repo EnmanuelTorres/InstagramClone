@@ -43,7 +43,7 @@ extension Post {
             .init(
                   id: NSUUID().uuidString,
                   ownerUID: NSUUID().uuidString,
-                  caption: "God is goodand he blessed me",
+                  caption: "God is good and he blessed me",
                   likes: 275,
                   imageUrl: "luisSilva",
                   timestamp: Date(),
