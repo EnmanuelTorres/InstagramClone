@@ -44,6 +44,7 @@
 		4EDA84DD2B335577005828BF /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84DC2B335577005828BF /* CompleteSignUpView.swift */; };
 		4EDA84DF2B348F7A005828BF /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84DE2B348F7A005828BF /* AuthService.swift */; };
 		4EDA84E42B349811005828BF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84E32B349811005828BF /* ContentViewModel.swift */; };
+		4EDA84E72B34AC6E005828BF /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84E62B34AC6E005828BF /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		4EDA84DC2B335577005828BF /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
 		4EDA84DE2B348F7A005828BF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		4EDA84E32B349811005828BF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		4EDA84E62B34AC6E005828BF /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +182,9 @@
 		4EDA84942B2D2AD3005828BF /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				4EDA84D72B33456B005828BF /* Service */,
 				4EDA84D62B334394005828BF /* View */,
+				4EDA84E52B34AC48005828BF /* ViewModel */,
+				4EDA84D72B33456B005828BF /* Service */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -299,6 +302,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4EDA84E52B34AC48005828BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EDA84E62B34AC6E005828BF /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -399,6 +410,7 @@
 				4EDA84B72B30F6D8005828BF /* ProfileHeaderView.swift in Sources */,
 				4EDA84A72B2E6A3C005828BF /* SearchView.swift in Sources */,
 				4EDA84E42B349811005828BF /* ContentViewModel.swift in Sources */,
+				4EDA84E72B34AC6E005828BF /* RegistrationViewModel.swift in Sources */,
 				4EDA84B52B30F3DF005828BF /* PostGridView.swift in Sources */,
 				4EDA84BB2B3118FA005828BF /* UploadPostViewModel.swift in Sources */,
 				4EDA84D92B33465C005828BF /* CreateUserNameView.swift in Sources */,
