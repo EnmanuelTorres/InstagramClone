@@ -46,6 +46,8 @@ struct ProfileHeaderView: View {
                     Text(bio)
                         .font(.footnote)
                 }
+                
+                Text(user.username)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal)
