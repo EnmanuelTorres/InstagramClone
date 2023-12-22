@@ -45,6 +45,7 @@
 		4EDA84DF2B348F7A005828BF /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84DE2B348F7A005828BF /* AuthService.swift */; };
 		4EDA84E42B349811005828BF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84E32B349811005828BF /* ContentViewModel.swift */; };
 		4EDA84E72B34AC6E005828BF /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84E62B34AC6E005828BF /* RegistrationViewModel.swift */; };
+		4EDA84E92B35E60D005828BF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84E82B35E60D005828BF /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		4EDA84DE2B348F7A005828BF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		4EDA84E32B349811005828BF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		4EDA84E62B34AC6E005828BF /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		4EDA84E82B35E60D005828BF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				4EDA84E62B34AC6E005828BF /* RegistrationViewModel.swift */,
+				4EDA84E82B35E60D005828BF /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				4EDA84B72B30F6D8005828BF /* ProfileHeaderView.swift in Sources */,
 				4EDA84A72B2E6A3C005828BF /* SearchView.swift in Sources */,
 				4EDA84E42B349811005828BF /* ContentViewModel.swift in Sources */,
+				4EDA84E92B35E60D005828BF /* LoginViewModel.swift in Sources */,
 				4EDA84E72B34AC6E005828BF /* RegistrationViewModel.swift in Sources */,
 				4EDA84B52B30F3DF005828BF /* PostGridView.swift in Sources */,
 				4EDA84BB2B3118FA005828BF /* UploadPostViewModel.swift in Sources */,
