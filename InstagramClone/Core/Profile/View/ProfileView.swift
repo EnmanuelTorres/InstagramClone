@@ -11,7 +11,6 @@ struct ProfileView: View {
     
     let user: User
     
-    
     private let imageDimension: CGFloat = (UIScreen.main.bounds.width / 3) - 1
     
     var posts : [Post] {
