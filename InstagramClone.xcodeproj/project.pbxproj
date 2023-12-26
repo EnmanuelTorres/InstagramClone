@@ -50,6 +50,7 @@
 		4EDA84EF2B364008005828BF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84EE2B364008005828BF /* SearchViewModel.swift */; };
 		4EDA84F12B37420D005828BF /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84F02B37420D005828BF /* EditProfileView.swift */; };
 		4EDA84F52B374EF6005828BF /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84F42B374EF6005828BF /* EditProfileViewModel.swift */; };
+		4EDA84F72B37B066005828BF /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84F62B37B066005828BF /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		4EDA84EE2B364008005828BF /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		4EDA84F02B37420D005828BF /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		4EDA84F42B374EF6005828BF /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		4EDA84F62B37B066005828BF /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				4EDA84EA2B363E2C005828BF /* UserService.swift */,
+				4EDA84F62B37B066005828BF /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				4EDA84E42B349811005828BF /* ContentViewModel.swift in Sources */,
 				4EDA84F12B37420D005828BF /* EditProfileView.swift in Sources */,
 				4EDA84E92B35E60D005828BF /* LoginViewModel.swift in Sources */,
+				4EDA84F72B37B066005828BF /* ImageUploader.swift in Sources */,
 				4EDA84E72B34AC6E005828BF /* RegistrationViewModel.swift in Sources */,
 				4EDA84B52B30F3DF005828BF /* PostGridView.swift in Sources */,
 				4EDA84BB2B3118FA005828BF /* UploadPostViewModel.swift in Sources */,
