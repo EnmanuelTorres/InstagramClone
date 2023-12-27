@@ -237,8 +237,8 @@
 		4EDA84982B2D2B84005828BF /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
-				4EDA84B82B3112D3005828BF /* UploadPostView.swift */,
-				4EDA84BA2B3118FA005828BF /* UploadPostViewModel.swift */,
+				4EDA84FE2B3B8629005828BF /* View */,
+				4EDA84FD2B3B861E005828BF /* ViewModel */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -361,6 +361,22 @@
 				4EDA84B02B30AC60005828BF /* CurrentUserProfileView.swift */,
 				4EDA84B62B30F6D8005828BF /* ProfileHeaderView.swift */,
 				4EDA84F02B37420D005828BF /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EDA84FD2B3B861E005828BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EDA84BA2B3118FA005828BF /* UploadPostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4EDA84FE2B3B8629005828BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EDA84B82B3112D3005828BF /* UploadPostView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
