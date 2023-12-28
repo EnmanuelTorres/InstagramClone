@@ -53,6 +53,7 @@
 		4EDA84F72B37B066005828BF /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84F62B37B066005828BF /* ImageUploader.swift */; };
 		4EDA84FA2B3B6A39005828BF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4EDA84F92B3B6A39005828BF /* Kingfisher */; };
 		4EDA84FC2B3B6B91005828BF /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA84FB2B3B6B91005828BF /* CircularProfileImageView.swift */; };
+		4EDA85022B3DC92C005828BF /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA85012B3DC92C005828BF /* FeedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 		4EDA84F42B374EF6005828BF /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		4EDA84F62B37B066005828BF /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		4EDA84FB2B3B6B91005828BF /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		4EDA85012B3DC92C005828BF /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,8 +212,8 @@
 		4EDA84952B2D2ADF005828BF /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				4EDA84A22B2E209E005828BF /* FeedView.swift */,
-				4EDA84A42B2E20AF005828BF /* FeedCell.swift */,
+				4EDA85002B3DC7E4005828BF /* View */,
+				4EDA84FF2B3DC7D9005828BF /* ViewModel */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -381,6 +383,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		4EDA84FF2B3DC7D9005828BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EDA85012B3DC92C005828BF /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4EDA85002B3DC7E4005828BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EDA84A22B2E209E005828BF /* FeedView.swift */,
+				4EDA84A42B2E20AF005828BF /* FeedCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -484,6 +503,7 @@
 				4EDA84AB2B307F7E005828BF /* AddEmailView.swift in Sources */,
 				4EDA84B72B30F6D8005828BF /* ProfileHeaderView.swift in Sources */,
 				4EDA84A72B2E6A3C005828BF /* SearchView.swift in Sources */,
+				4EDA85022B3DC92C005828BF /* FeedViewModel.swift in Sources */,
 				4EDA84E42B349811005828BF /* ContentViewModel.swift in Sources */,
 				4EDA84F12B37420D005828BF /* EditProfileView.swift in Sources */,
 				4EDA84E92B35E60D005828BF /* LoginViewModel.swift in Sources */,
