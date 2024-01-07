@@ -9,9 +9,52 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
     
-    let user: User
+    @ObservedObject var viewModel : ProfileViewModel
     @State private var showEditProfile = false
     
+    private var user: User {
+        return viewModel.user
+    }
+    
+    private var isFollowed: Bool {
+       return user.isFollowed ?? false
+    }
+    
+    private var buttonTitle: String {
+        if user.isCurrentUser {
+            return "Edit Profile"
+        } else {
+            return isFollowed ? "Following" : "Follow"
+        }
+    }
+    
+    private var buttonBackgroundColor: Color {
+        if user.isCurrentUser || isFollowed {
+            return .white
+        } else {
+            return Color(.systemBlue)
+        }
+    }
+    
+    private var buttonForegroundColor: Color {
+        if user.isCurrentUser || isFollowed {
+            return .black
+        } else {
+            return .white
+        }
+    }
+    
+    private var buttonBorderColor: Color {
+        if user.isCurrentUser || isFollowed {
+            return .gray
+        } else {
+            return .white
+        }
+    }
+    
+    init(user: User){
+        self.viewModel = ProfileViewModel(user: user)
+    }
     var body: some View {
         VStack(spacing: 10) {
             //pic ans stats
@@ -54,19 +97,19 @@ struct ProfileHeaderView: View {
                 if  user.isCurrentUser{
                     showEditProfile.toggle()
                 } else {
-                    print("Follow user...")
+                    handleFollowTapped()
                 }
             } label: {
-                Text(user.isCurrentUser ? "Edit Profile" : "Follow")
+                Text(buttonTitle)
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .frame(width: 360, height: 32)
-                    .background(user.isCurrentUser ? .white : Color(.systemBlue) )
-                    .foregroundColor(user.isCurrentUser ? .black : .white)
+                    .background(buttonBackgroundColor )
+                    .foregroundColor(buttonForegroundColor)
                     .cornerRadius(6)
                     .overlay(
                         RoundedRectangle(cornerRadius: 6)
-                            .stroke(user.isCurrentUser ? Color.gray : .clear, lineWidth: 1)
+                            .stroke(buttonBorderColor, lineWidth: 1)
                     )
             }
             
@@ -75,6 +118,14 @@ struct ProfileHeaderView: View {
         .fullScreenCover(isPresented: $showEditProfile, content: {
             EditProfileView(user: user)
         })
+    }
+    
+    func handleFollowTapped() {
+        if isFollowed {
+            viewModel.unfollow()
+        } else {
+            viewModel.follow()
+        }
     }
 }
 

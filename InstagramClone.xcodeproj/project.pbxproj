@@ -65,6 +65,7 @@
 		4EF274BC2B4A0E880057441D /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274BB2B4A0E880057441D /* DeveloperPreview.swift */; };
 		4EF274BE2B4AEBC20057441D /* Timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274BD2B4AEBC20057441D /* Timestamp.swift */; };
 		4EF274C12B4AEF540057441D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274C02B4AEF540057441D /* Constants.swift */; };
+		4EF274C32B4AF9C60057441D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274C22B4AF9C60057441D /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +116,7 @@
 		4EF274BB2B4A0E880057441D /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		4EF274BD2B4AEBC20057441D /* Timestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timestamp.swift; sourceTree = "<group>"; };
 		4EF274C02B4AEF540057441D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4EF274C22B4AF9C60057441D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				4EDA84F42B374EF6005828BF /* EditProfileViewModel.swift */,
+				4EF274C22B4AF9C60057441D /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				4EDA84AB2B307F7E005828BF /* AddEmailView.swift in Sources */,
 				4EDA84B72B30F6D8005828BF /* ProfileHeaderView.swift in Sources */,
 				4EF274BC2B4A0E880057441D /* DeveloperPreview.swift in Sources */,
+				4EF274C32B4AF9C60057441D /* ProfileViewModel.swift in Sources */,
 				4EDA84A72B2E6A3C005828BF /* SearchView.swift in Sources */,
 				4EDA85022B3DC92C005828BF /* FeedViewModel.swift in Sources */,
 				4EDA84E42B349811005828BF /* ContentViewModel.swift in Sources */,
