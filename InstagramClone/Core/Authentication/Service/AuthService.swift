@@ -70,6 +70,6 @@ class AuthService {
             return
         }
         
-        try? await Firestore.firestore().collection("users").document(user.id).setData(encodedUser)
+        try? await FirebaseConstants.UsersCollection.document(user.id).setData(encodedUser)
     }
 }
