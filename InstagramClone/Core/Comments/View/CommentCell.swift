@@ -5,12 +5,15 @@
 //  Created by ENMANUEL TORRES on 6/01/24.
 //
 
+
 import SwiftUI
 
 struct CommentCell: View {
     
-    private var user: User {
-        return User.MOCK_USERS[0]
+    let comment: Comment
+    
+    private var user: User? {
+        return comment.user
     }
     
     
@@ -21,7 +24,7 @@ struct CommentCell: View {
             
             VStack(alignment: .leading, spacing: 4){
                 HStack(spacing: 2){
-                    Text(user.username)
+                    Text(user?.username ?? "")
                         .fontWeight(.semibold)
                     
                     Text("6d")
@@ -29,7 +32,8 @@ struct CommentCell: View {
                     
                 }
                 
-                Text("How's the back of my car look?")
+                Text(comment.commentText)
+               
             }
             .font(.caption)
             Spacer()
@@ -38,6 +42,7 @@ struct CommentCell: View {
     }
 }
 
+
 #Preview {
-    CommentCell()
+    CommentCell(comment: DeveloperPreview.shared.comment)
 }
