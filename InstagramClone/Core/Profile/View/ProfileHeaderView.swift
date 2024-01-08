@@ -64,11 +64,11 @@ struct ProfileHeaderView: View {
                 Spacer()
                 
                 HStack(spacing: 8){
-                    UserStatView(value: 3, title: "Posts")
+                    UserStatView(value: user.stats?.postCount ?? 0, title: "Posts")
                     
-                    UserStatView(value: 14, title: "Followers")
+                    UserStatView(value: user.stats?.followersCount ?? 0, title: "Followers")
                     
-                    UserStatView(value: 57, title: "Following")
+                    UserStatView(value: user.stats?.followingCount ?? 0, title: "Following")
                    
                 }
             }

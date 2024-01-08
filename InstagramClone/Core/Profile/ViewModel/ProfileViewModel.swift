@@ -14,6 +14,13 @@ class ProfileViewModel : ObservableObject {
     init(user: User) {
         self.user = user
         checkIfUserIsFollowed()
+        fetchUserStats()
+    }
+    
+    func fetchUserStats(){
+        Task {
+            self.user.stats = try await UserService.fetchUserStats(uid: user.id)
+        }
     }
 }
 
