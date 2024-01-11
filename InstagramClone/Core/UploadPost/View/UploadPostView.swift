@@ -15,56 +15,68 @@ struct UploadPostView: View {
     @StateObject var viewModel = UploadPostViewModel()
     @Binding var tabIndex: Int
     
+    private var isLoading: Bool {
+        return viewModel.isLoading
+    }
+    
     var body: some View {
-        VStack {
-            // action tool bar
-            HStack {
-                Button {
-                    clearPostDataAndReturnToFeed()
-                } label: {
-                    Text("Cancel")
-                }
-                
-                Spacer()
-                
-                Text("New Post")
-                    .fontWeight(.semibold)
-                
-                Spacer()
-                
-                Button {
-                    Task {
-                        try await viewModel.uploadPost(caption: caption)
+        ZStack {
+            VStack {
+                // action tool bar
+                HStack {
+                    Button {
                         clearPostDataAndReturnToFeed()
+                    } label: {
+                        Text("Cancel")
                     }
-                } label: {
-                    Text("Upload")
+                    
+                    Spacer()
+                    
+                    Text("New Post")
                         .fontWeight(.semibold)
-                }
-            
-            }
-            .padding(.horizontal)
-            
-            // post image and caption
-            HStack(spacing: 8) {
-                if let image = viewModel.postImage {
-                    image
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 100, height: 100)
-                        .clipped()
-                }
+                    
+                    Spacer()
+                    
+                    Button {
+                        Task {
+                            try await viewModel.uploadPost(caption: caption)
+                            clearPostDataAndReturnToFeed()
+                        }
+                    } label: {
+                        Text("Upload")
+                            .fontWeight(.semibold)
+                    }
                 
-                TextField("Enter your caption...", text: $caption, axis: .vertical)
+                }
+                .padding(.horizontal)
+                
+                // post image and caption
+                HStack(spacing: 8) {
+                    if let image = viewModel.postImage {
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 100, height: 100)
+                            .clipped()
+                    }
+                    
+                    TextField("Enter your caption...", text: $caption, axis: .vertical)
+                }
+                .padding()
+                
+                Spacer()
             }
-            .padding()
-            
-            Spacer()
-        }
-        .onAppear{
-            imagePickerPresented.toggle()
-        }
+            .onAppear{
+                imagePickerPresented.toggle()
+            }
         .photosPicker(isPresented: $imagePickerPresented, selection: $viewModel.selectedImage)
+            
+            
+            if isLoading {
+              LoadingView()
+            }
+           
+        }
     }
     
     func clearPostDataAndReturnToFeed(){

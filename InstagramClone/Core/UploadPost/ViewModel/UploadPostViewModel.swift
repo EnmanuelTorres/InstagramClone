@@ -23,6 +23,8 @@ class UploadPostViewModel: ObservableObject {
     @Published var postImage: Image?
     @Published var uiImage: UIImage?
     
+    @Published var isLoading = false
+    
     func loadImage(fromItem item:  PhotosPickerItem?) async {
         guard let item = item else {
             return
@@ -37,6 +39,7 @@ class UploadPostViewModel: ObservableObject {
     }
     
     func uploadPost(caption: String) async throws {
+        isLoading = true
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
         guard let uiImage = uiImage else { return }
@@ -54,5 +57,6 @@ class UploadPostViewModel: ObservableObject {
         guard let encodedPost = try? Firestore.Encoder().encode(post) else { return }
         
         try await postRef.setData(encodedPost)
+        isLoading = false
     }
 }

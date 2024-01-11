@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum UserListConfig: Hashable {
     case followers(uid: String)
@@ -27,3 +28,4 @@ enum UserListConfig: Hashable {
         }
     }
 }
+

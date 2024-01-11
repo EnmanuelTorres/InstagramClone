@@ -28,6 +28,7 @@ class EditProfileViewModel: ObservableObject {
     @Published var bio = ""
     
     private var uiImage: UIImage?
+    @Published var isLoading = false
     
     init(user: User){
         self.user = user
@@ -58,6 +59,8 @@ class EditProfileViewModel: ObservableObject {
     
     
     func updateUserData() async throws{
+        
+        isLoading = true
         // update profile image if changed
         var data = [String: Any]()
         
@@ -78,6 +81,7 @@ class EditProfileViewModel: ObservableObject {
        
         if !data.isEmpty {
             try await FirebaseConstants.UsersCollection.document(user.id).updateData(data)
+            isLoading = false
         }
         
     }

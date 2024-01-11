@@ -69,6 +69,10 @@
 		4EF274C52B4C9F8A0057441D /* UserListConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274C42B4C9F8A0057441D /* UserListConfig.swift */; };
 		4EF274C72B4CD1AF0057441D /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274C62B4CD1AF0057441D /* UserListView.swift */; };
 		4EF274C92B4CD2890057441D /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274C82B4CD2890057441D /* UserListViewModel.swift */; };
+		4EF274D02B5025070057441D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274CF2B5025070057441D /* NotificationView.swift */; };
+		4EF274D22B50251B0057441D /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274D12B50251B0057441D /* NotificationCell.swift */; };
+		4EF425F52B50650A0058D626 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF425F42B50650A0058D626 /* LoadingView.swift */; };
+		4EF425F92B509D0C0058D626 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF425F82B509D0C0058D626 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +127,10 @@
 		4EF274C42B4C9F8A0057441D /* UserListConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListConfig.swift; sourceTree = "<group>"; };
 		4EF274C62B4CD1AF0057441D /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		4EF274C82B4CD2890057441D /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		4EF274CF2B5025070057441D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		4EF274D12B50251B0057441D /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		4EF425F42B50650A0058D626 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4EF425F82B509D0C0058D626 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Utils/Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +184,7 @@
 				4EF274BF2B4AEF060057441D /* Utils */,
 				4EDA84BC2B324495005828BF /* GoogleService-Info.plist */,
 				4EDA84842B2D29DF005828BF /* Assets.xcassets */,
+				4EF425F82B509D0C0058D626 /* Launch Screen.storyboard */,
 				4EDA84862B2D29DF005828BF /* Preview Content */,
 			);
 			path = InstagramClone;
@@ -216,6 +225,7 @@
 				4EF274AC2B49AEAC0057441D /* Comments */,
 				4EDA849F2B2E0E5A005828BF /* Components */,
 				4EDA84952B2D2ADF005828BF /* Feed */,
+				4EF274CA2B50244D0057441D /* Notification */,
 				4EDA84962B2D2B46005828BF /* Profile */,
 				4EDA84E02B34976E005828BF /* Root */,
 				4EDA84972B2D2B4A005828BF /* Search */,
@@ -504,9 +514,51 @@
 		4EF274BF2B4AEF060057441D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4EF425F42B50650A0058D626 /* LoadingView.swift */,
 				4EF274C02B4AEF540057441D /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		4EF274CA2B50244D0057441D /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				4EF274CE2B5024880057441D /* Model */,
+				4EF274CD2B5024860057441D /* View */,
+				4EF274CC2B5024840057441D /* ViewModel */,
+				4EF274CB2B5024810057441D /* Service */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		4EF274CB2B5024810057441D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4EF274CC2B5024840057441D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4EF274CD2B5024860057441D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EF274CF2B5025070057441D /* NotificationView.swift */,
+				4EF274D12B50251B0057441D /* NotificationCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EF274CE2B5024880057441D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -587,6 +639,7 @@
 			files = (
 				4EDA84882B2D29DF005828BF /* Preview Assets.xcassets in Resources */,
 				4EDA84852B2D29DF005828BF /* Assets.xcassets in Resources */,
+				4EF425F92B509D0C0058D626 /* Launch Screen.storyboard in Resources */,
 				4EDA84BD2B324495005828BF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +657,7 @@
 				4EDA84B92B3112D3005828BF /* UploadPostView.swift in Sources */,
 				4EF274B22B49AFAE0057441D /* CommentsView.swift in Sources */,
 				4EDA849E2B2DFDE9005828BF /* ProfileView.swift in Sources */,
+				4EF274D22B50251B0057441D /* NotificationCell.swift in Sources */,
 				4EDA84832B2D29DB005828BF /* ContentView.swift in Sources */,
 				4EDA84A92B2E783D005828BF /* LoginView.swift in Sources */,
 				4EDA84F52B374EF6005828BF /* EditProfileViewModel.swift in Sources */,
@@ -633,6 +687,8 @@
 				4EDA84F72B37B066005828BF /* ImageUploader.swift in Sources */,
 				4EDA84E72B34AC6E005828BF /* RegistrationViewModel.swift in Sources */,
 				4EDA84B52B30F3DF005828BF /* PostGridView.swift in Sources */,
+				4EF425F52B50650A0058D626 /* LoadingView.swift in Sources */,
+				4EF274D02B5025070057441D /* NotificationView.swift in Sources */,
 				4EDA84BB2B3118FA005828BF /* UploadPostViewModel.swift in Sources */,
 				4EDA84D92B33465C005828BF /* CreateUserNameView.swift in Sources */,
 				4EDA84AD2B308533005828BF /* IGTextFieldModifier.swift in Sources */,
@@ -784,6 +840,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -813,6 +870,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

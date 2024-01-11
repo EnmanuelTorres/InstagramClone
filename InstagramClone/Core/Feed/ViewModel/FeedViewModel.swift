@@ -10,6 +10,7 @@ import Firebase
 
 class FeedViewModel: ObservableObject {
     @Published var posts = [Post]()
+    @Published var isLoading = false
     
     init(){
         Task {
@@ -19,6 +20,8 @@ class FeedViewModel: ObservableObject {
     
     @MainActor
     func fetchPosts() async throws {
+        isLoading = true
         self.posts = try await PostService.fetchFeedPosts()
+        isLoading = false
     }
 }

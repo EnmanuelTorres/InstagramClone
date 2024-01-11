@@ -9,16 +9,24 @@ import SwiftUI
 
 struct FeedView: View {
     @StateObject var viewModel = FeedViewModel()
-    
+    private var isLoading: Bool {
+        return viewModel.isLoading
+    }
     var body: some View {
         NavigationStack {
             ScrollView {
-                LazyVStack(spacing: 32) {
-                    ForEach(viewModel.posts) { post in
-                        FeedCell(post: post)
+                ZStack {
+                    LazyVStack(spacing: 32) {
+                        ForEach(viewModel.posts) { post in
+                            FeedCell(post: post)
+                        }
+                    }
+                    .padding(.top, 8)
+                    
+                    if isLoading {
+                      LoadingView()
                     }
                 }
-                .padding(.top, 8)
             }
             .navigationTitle("Feed")
             .navigationBarTitleDisplayMode(.inline)
