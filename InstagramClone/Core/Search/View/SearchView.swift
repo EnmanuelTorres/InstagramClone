@@ -14,37 +14,7 @@ struct SearchView: View {
     
     var body: some View {
         NavigationStack {
-            ScrollView {
-                
-                LazyVStack(spacing: 12) {
-                    ForEach(viewModel.users){ user in
-                        NavigationLink(value: user) {
-                            HStack {
-                                CircularProfileImageView(user: user, size: .xSmall)
-                                
-                                VStack(alignment: .leading) {
-                                    Text(user.username)
-                                    
-                                    if let fullName = user.fullname {
-                                        Text(fullName)
-                                    }
-                                    
-                                }
-                                .font(.footnote)
-                                
-                                Spacer()
-                            }
-                            .foregroundStyle(.black)
-                            .padding(.horizontal)
-                        }
-                    }
-                }
-                .navigationDestination(for: User.self, destination: { user in
-                    ProfileView(user: user)
-                })
-                .padding(.top, 8)
-                .searchable(text: $searchText, prompt: "Search...")
-           }
+            UserListView(config: .explore)
             .navigationTitle("Explore")
             .navigationBarTitleDisplayMode(.inline)
         }

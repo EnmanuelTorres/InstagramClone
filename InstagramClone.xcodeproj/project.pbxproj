@@ -66,6 +66,9 @@
 		4EF274BE2B4AEBC20057441D /* Timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274BD2B4AEBC20057441D /* Timestamp.swift */; };
 		4EF274C12B4AEF540057441D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274C02B4AEF540057441D /* Constants.swift */; };
 		4EF274C32B4AF9C60057441D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274C22B4AF9C60057441D /* ProfileViewModel.swift */; };
+		4EF274C52B4C9F8A0057441D /* UserListConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274C42B4C9F8A0057441D /* UserListConfig.swift */; };
+		4EF274C72B4CD1AF0057441D /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274C62B4CD1AF0057441D /* UserListView.swift */; };
+		4EF274C92B4CD2890057441D /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274C82B4CD2890057441D /* UserListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +120,9 @@
 		4EF274BD2B4AEBC20057441D /* Timestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timestamp.swift; sourceTree = "<group>"; };
 		4EF274C02B4AEF540057441D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4EF274C22B4AF9C60057441D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		4EF274C42B4C9F8A0057441D /* UserListConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListConfig.swift; sourceTree = "<group>"; };
+		4EF274C62B4CD1AF0057441D /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		4EF274C82B4CD2890057441D /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +204,7 @@
 			children = (
 				4EDA84AE2B309ACA005828BF /* User.swift */,
 				4EDA84B22B30E409005828BF /* Post.swift */,
+				4EF274C42B4C9F8A0057441D /* UserListConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -433,6 +440,7 @@
 			isa = PBXGroup;
 			children = (
 				4EDA85072B3E22F0005828BF /* PostGridViewModel.swift */,
+				4EF274C82B4CD2890057441D /* UserListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -444,6 +452,7 @@
 				4EDA84AC2B308533005828BF /* IGTextFieldModifier.swift */,
 				4EDA84B42B30F3DF005828BF /* PostGridView.swift */,
 				4EDA84FB2B3B6B91005828BF /* CircularProfileImageView.swift */,
+				4EF274C62B4CD1AF0057441D /* UserListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -589,6 +598,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF274C52B4C9F8A0057441D /* UserListConfig.swift in Sources */,
 				4EF274BE2B4AEBC20057441D /* Timestamp.swift in Sources */,
 				4EDA84A52B2E20AF005828BF /* FeedCell.swift in Sources */,
 				4EDA84B92B3112D3005828BF /* UploadPostView.swift in Sources */,
@@ -599,12 +609,14 @@
 				4EDA84F52B374EF6005828BF /* EditProfileViewModel.swift in Sources */,
 				4EF274C12B4AEF540057441D /* Constants.swift in Sources */,
 				4EDA84DF2B348F7A005828BF /* AuthService.swift in Sources */,
+				4EF274C92B4CD2890057441D /* UserListViewModel.swift in Sources */,
 				4EF274B42B49AFC30057441D /* CommentCell.swift in Sources */,
 				4EDA84EB2B363E2C005828BF /* UserService.swift in Sources */,
 				4EDA84812B2D29DB005828BF /* InstagramCloneApp.swift in Sources */,
 				4EDA84B32B30E409005828BF /* Post.swift in Sources */,
 				4EDA84DD2B335577005828BF /* CompleteSignUpView.swift in Sources */,
 				4EDA84AB2B307F7E005828BF /* AddEmailView.swift in Sources */,
+				4EF274C72B4CD1AF0057441D /* UserListView.swift in Sources */,
 				4EDA84B72B30F6D8005828BF /* ProfileHeaderView.swift in Sources */,
 				4EF274BC2B4A0E880057441D /* DeveloperPreview.swift in Sources */,
 				4EF274C32B4AF9C60057441D /* ProfileViewModel.swift in Sources */,
