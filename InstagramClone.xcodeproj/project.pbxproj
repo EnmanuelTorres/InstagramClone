@@ -73,6 +73,9 @@
 		4EF274D22B50251B0057441D /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF274D12B50251B0057441D /* NotificationCell.swift */; };
 		4EF425F52B50650A0058D626 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF425F42B50650A0058D626 /* LoadingView.swift */; };
 		4EF425F92B509D0C0058D626 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF425F82B509D0C0058D626 /* Launch Screen.storyboard */; };
+		4EF425FB2B50B5B30058D626 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF425FA2B50B5B30058D626 /* Notification.swift */; };
+		4EF425FD2B50B7A60058D626 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF425FC2B50B7A60058D626 /* NotificationType.swift */; };
+		4EF425FF2B50BE710058D626 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF425FE2B50BE710058D626 /* NotificationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +134,9 @@
 		4EF274D12B50251B0057441D /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		4EF425F42B50650A0058D626 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		4EF425F82B509D0C0058D626 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Utils/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		4EF425FA2B50B5B30058D626 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		4EF425FC2B50B7A60058D626 /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
+		4EF425FE2B50BE710058D626 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -541,6 +547,7 @@
 		4EF274CC2B5024840057441D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4EF425FE2B50BE710058D626 /* NotificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -557,6 +564,8 @@
 		4EF274CE2B5024880057441D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4EF425FA2B50B5B30058D626 /* Notification.swift */,
+				4EF425FC2B50B7A60058D626 /* NotificationType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -669,6 +678,7 @@
 				4EDA84812B2D29DB005828BF /* InstagramCloneApp.swift in Sources */,
 				4EDA84B32B30E409005828BF /* Post.swift in Sources */,
 				4EDA84DD2B335577005828BF /* CompleteSignUpView.swift in Sources */,
+				4EF425FD2B50B7A60058D626 /* NotificationType.swift in Sources */,
 				4EDA84AB2B307F7E005828BF /* AddEmailView.swift in Sources */,
 				4EF274C72B4CD1AF0057441D /* UserListView.swift in Sources */,
 				4EDA84B72B30F6D8005828BF /* ProfileHeaderView.swift in Sources */,
@@ -693,6 +703,7 @@
 				4EDA84D92B33465C005828BF /* CreateUserNameView.swift in Sources */,
 				4EDA84AD2B308533005828BF /* IGTextFieldModifier.swift in Sources */,
 				4EDA84AF2B309ACA005828BF /* User.swift in Sources */,
+				4EF425FF2B50BE710058D626 /* NotificationViewModel.swift in Sources */,
 				4EDA84A12B2E0E9A005828BF /* UserStatView.swift in Sources */,
 				4EDA84A32B2E209E005828BF /* FeedView.swift in Sources */,
 				4EDA84DB2B335286005828BF /* CreatePasswordView.swift in Sources */,
@@ -701,6 +712,7 @@
 				4EF274B62B49F1780057441D /* Comment.swift in Sources */,
 				4EDA84B12B30AC60005828BF /* CurrentUserProfileView.swift in Sources */,
 				4EDA849C2B2D347F005828BF /* MainTabView.swift in Sources */,
+				4EF425FB2B50B5B30058D626 /* Notification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

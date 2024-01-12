@@ -17,4 +17,31 @@ struct DeveloperPreview {
                           postId: "34456",
                           timeStamp: Timestamp(),
                           commentOwnerUid: "27337939")
+    
+    let notifications: [Notification] = [
+        .init(id: NSUUID().uuidString,
+              timestamp: Timestamp(),
+              notificationSerdenUid: "123",
+              type: .like),
+        
+        .init(id: NSUUID().uuidString,
+              timestamp: Timestamp(),
+              notificationSerdenUid: "465",
+              type: .comment),
+        
+        .init(id: NSUUID().uuidString,
+              timestamp: Timestamp(),
+              notificationSerdenUid: "495",
+              type: .follow),
+        
+        .init(id: NSUUID().uuidString,
+              timestamp: Timestamp(),
+              notificationSerdenUid: "351",
+              type: .like),
+        
+            .init(id: NSUUID().uuidString,
+                  timestamp: Timestamp(),
+                  notificationSerdenUid: "849",
+                  type: .like)
+    ]
 }
