@@ -21,27 +21,27 @@ struct DeveloperPreview {
     let notifications: [Notification] = [
         .init(id: NSUUID().uuidString,
               timestamp: Timestamp(),
-              notificationSerdenUid: "123",
+              notificationSenderUid: "123",
               type: .like),
         
         .init(id: NSUUID().uuidString,
               timestamp: Timestamp(),
-              notificationSerdenUid: "465",
+              notificationSenderUid: "465",
               type: .comment),
         
         .init(id: NSUUID().uuidString,
               timestamp: Timestamp(),
-              notificationSerdenUid: "495",
+              notificationSenderUid: "495",
               type: .follow),
         
         .init(id: NSUUID().uuidString,
               timestamp: Timestamp(),
-              notificationSerdenUid: "351",
+              notificationSenderUid: "351",
               type: .like),
         
             .init(id: NSUUID().uuidString,
                   timestamp: Timestamp(),
-                  notificationSerdenUid: "849",
+                  notificationSenderUid: "849",
                   type: .like)
     ]
 }

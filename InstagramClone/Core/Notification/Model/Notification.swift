@@ -11,7 +11,7 @@ struct Notification: Identifiable, Codable {
     var id: String
     var postId: String?
     let timestamp: Timestamp
-    let notificationSerdenUid: String
+    let notificationSenderUid: String
     let type: NotificationType
     
     var post: Post?

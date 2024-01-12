@@ -63,7 +63,7 @@ struct FeedCell: View {
                 }
                 
                 Button {
-                    showComments.toggle()
+                    showComments = true
                 } label: {
                     Image(systemName: "bubble.right")
                         .imageScale(.large)

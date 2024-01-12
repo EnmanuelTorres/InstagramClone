@@ -76,6 +76,8 @@
 		4EF425FB2B50B5B30058D626 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF425FA2B50B5B30058D626 /* Notification.swift */; };
 		4EF425FD2B50B7A60058D626 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF425FC2B50B7A60058D626 /* NotificationType.swift */; };
 		4EF425FF2B50BE710058D626 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF425FE2B50BE710058D626 /* NotificationViewModel.swift */; };
+		4EF426012B5176B10058D626 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF426002B5176B10058D626 /* NotificationService.swift */; };
+		4EF426042B517CD50058D626 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF426032B517CD50058D626 /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +139,8 @@
 		4EF425FA2B50B5B30058D626 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		4EF425FC2B50B7A60058D626 /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
 		4EF425FE2B50BE710058D626 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		4EF426002B5176B10058D626 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		4EF426032B517CD50058D626 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -529,6 +533,7 @@
 		4EF274CA2B50244D0057441D /* Notification */ = {
 			isa = PBXGroup;
 			children = (
+				4EF426022B517CB10058D626 /* Manager */,
 				4EF274CE2B5024880057441D /* Model */,
 				4EF274CD2B5024860057441D /* View */,
 				4EF274CC2B5024840057441D /* ViewModel */,
@@ -540,6 +545,7 @@
 		4EF274CB2B5024810057441D /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				4EF426002B5176B10058D626 /* NotificationService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -568,6 +574,14 @@
 				4EF425FC2B50B7A60058D626 /* NotificationType.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4EF426022B517CB10058D626 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4EF426032B517CD50058D626 /* NotificationManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -664,6 +678,7 @@
 				4EF274BE2B4AEBC20057441D /* Timestamp.swift in Sources */,
 				4EDA84A52B2E20AF005828BF /* FeedCell.swift in Sources */,
 				4EDA84B92B3112D3005828BF /* UploadPostView.swift in Sources */,
+				4EF426012B5176B10058D626 /* NotificationService.swift in Sources */,
 				4EF274B22B49AFAE0057441D /* CommentsView.swift in Sources */,
 				4EDA849E2B2DFDE9005828BF /* ProfileView.swift in Sources */,
 				4EF274D22B50251B0057441D /* NotificationCell.swift in Sources */,
@@ -696,6 +711,7 @@
 				4EDA84E92B35E60D005828BF /* LoginViewModel.swift in Sources */,
 				4EDA84F72B37B066005828BF /* ImageUploader.swift in Sources */,
 				4EDA84E72B34AC6E005828BF /* RegistrationViewModel.swift in Sources */,
+				4EF426042B517CD50058D626 /* NotificationManager.swift in Sources */,
 				4EDA84B52B30F3DF005828BF /* PostGridView.swift in Sources */,
 				4EF425F52B50650A0058D626 /* LoadingView.swift in Sources */,
 				4EF274D02B5025070057441D /* NotificationView.swift in Sources */,
