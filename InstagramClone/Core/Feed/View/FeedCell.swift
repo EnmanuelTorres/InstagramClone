@@ -64,6 +64,7 @@ struct FeedCell: View {
                 
                 Button {
                     showComments = true
+                  
                 } label: {
                     Image(systemName: "bubble.right")
                         .imageScale(.large)
@@ -111,9 +112,11 @@ struct FeedCell: View {
                 .foregroundColor(.gray)
         }
         .sheet(isPresented: $showComments, content: {
+            
             CommentsView(post: post)
                 .presentationDragIndicator(.visible)
         })
+        
     }
     
     private func handleLikeTapped(){
