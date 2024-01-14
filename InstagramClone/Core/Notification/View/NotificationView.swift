@@ -20,6 +20,12 @@ struct NotificationView: View {
                     }
                 }
             }
+            .navigationDestination(for: Post.self, destination: { post in
+                FeedCell(post: post)
+            })
+            .navigationDestination(for: User.self, destination: { user in
+                ProfileView(user: user)
+            })
             .navigationTitle("Notification")
             .navigationBarTitleDisplayMode(.inline)
         }
