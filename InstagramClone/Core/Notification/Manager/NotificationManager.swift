@@ -26,4 +26,8 @@ class NotificationManager {
     func uploadFollowNotification(toUid uid: String) {
         service.uploadNotification(toUid: uid, type: .follow)
     }
+    
+    func deleteNotification(toUid uid: String, type: NotificationType, postId: String? = nil) async{
+        try? await service.deleteNotification(toUid: uid, type: type, postId: postId)
+    }
 }

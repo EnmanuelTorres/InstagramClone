@@ -54,6 +54,8 @@ extension PostService {
         async let _ = try await postsCollection.document(post.id).collection("post-likes").document(uid).delete()
         async let _ = try await postsCollection.document(post.id).updateData(["likes": post.likes - 1])
         async let _ = FirebaseConstants.UsersCollection.document(uid).collection("user-likes").document(post.id).delete()
+        
+        async let _ = NotificationManager.shared.deleteNotification(toUid: post.ownerUID, type: .like, postId: post.id)
     }
     
     static func checkIfUserLikedPost(_ post: Post) async throws -> Bool {
