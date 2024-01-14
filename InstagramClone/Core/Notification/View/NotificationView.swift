@@ -28,6 +28,7 @@ struct NotificationView: View {
             })
             .navigationTitle("Notification")
             .navigationBarTitleDisplayMode(.inline)
+            .refreshable { await viewModel.fetchNotifications() }
         }
     }
 }

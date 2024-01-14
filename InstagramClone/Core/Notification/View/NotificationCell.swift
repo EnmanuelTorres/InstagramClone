@@ -9,7 +9,20 @@ import SwiftUI
 import Kingfisher
 
 struct NotificationCell: View {
-    let notification: Notification
+   
+    @ObservedObject var viewModel : NotificationCellViewModel
+    
+    var notification: Notification {
+        return viewModel.notification
+    }
+    
+    var isFollowed: Bool {
+        return notification.user?.isFollowed ?? false
+    }
+    
+    init(notification: Notification) {
+        self.viewModel = NotificationCellViewModel(notification: notification)
+    }
     
     var body: some View {
         HStack {
@@ -45,15 +58,19 @@ struct NotificationCell: View {
                 }
             }else {
                 Button {
-                    print("DEBUG: Handle follow here..")
+                    isFollowed ? viewModel.unfollow() : viewModel.follow()
                 } label: {
-                    Text("Follow")
+                    Text(isFollowed ? "Following" : "Follow")
                         .font(.subheadline)
                         .fontWeight(.semibold)
                         .frame(width: 88, height: 32)
-                        .foregroundStyle(.white)
-                        .background(.blue)
+                        .foregroundStyle(isFollowed ? .black : .white)
+                        .background( isFollowed ? Color(.systemBackground) : .blue)
                         .clipShape(RoundedRectangle(cornerRadius: 6))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 6)
+                                .stroke(isFollowed ? .gray : .white, lineWidth: 1)
+                        )
                 }
 
             }
@@ -61,6 +78,7 @@ struct NotificationCell: View {
         }
         .padding(.horizontal)
     }
+
 }
 
 #Preview {

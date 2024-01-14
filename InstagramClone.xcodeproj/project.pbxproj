@@ -78,6 +78,7 @@
 		4EF425FF2B50BE710058D626 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF425FE2B50BE710058D626 /* NotificationViewModel.swift */; };
 		4EF426012B5176B10058D626 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF426002B5176B10058D626 /* NotificationService.swift */; };
 		4EF426042B517CD50058D626 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF426032B517CD50058D626 /* NotificationManager.swift */; };
+		4EF426062B5429ED0058D626 /* NotificationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF426052B5429ED0058D626 /* NotificationCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +142,7 @@
 		4EF425FE2B50BE710058D626 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		4EF426002B5176B10058D626 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		4EF426032B517CD50058D626 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		4EF426052B5429ED0058D626 /* NotificationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -554,6 +556,7 @@
 			isa = PBXGroup;
 			children = (
 				4EF425FE2B50BE710058D626 /* NotificationViewModel.swift */,
+				4EF426052B5429ED0058D626 /* NotificationCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -711,6 +714,7 @@
 				4EDA84E92B35E60D005828BF /* LoginViewModel.swift in Sources */,
 				4EDA84F72B37B066005828BF /* ImageUploader.swift in Sources */,
 				4EDA84E72B34AC6E005828BF /* RegistrationViewModel.swift in Sources */,
+				4EF426062B5429ED0058D626 /* NotificationCellViewModel.swift in Sources */,
 				4EF426042B517CD50058D626 /* NotificationManager.swift in Sources */,
 				4EDA84B52B30F3DF005828BF /* PostGridView.swift in Sources */,
 				4EF425F52B50650A0058D626 /* LoadingView.swift in Sources */,

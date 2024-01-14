@@ -23,7 +23,14 @@ class NotificationViewModel: ObservableObject {
     func fetchNotifications() async{
         do {
             self.notifications = try await service.fetchNotification()
-            try await updateNotifications()
+          //  try await updateNotifications()
+            await withThrowingTaskGroup(of: Void.self) { group in
+            
+                    group.addTask {
+                        try await self.updateNotifications()
+
+                }
+            }
         } catch {
             print("DEBUG: Failed to fetch notifications with error: \(error.localizedDescription)")
         }
@@ -40,7 +47,17 @@ class NotificationViewModel: ObservableObject {
                 notification.post?.user = self.currentUser
             }
             
-            notifications[i] = notification
+           
+            if notification.type == .follow {
+                let localNotification = notification
+                async let isFollowed = try await UserService.checkIfUserIsFollowed(uid: localNotification.notificationSenderUid)
+                notification.user?.isFollowed = try await isFollowed
+            }
+        
+            
+            
+          notifications[i] = notification
+        
         }
     }
 }
